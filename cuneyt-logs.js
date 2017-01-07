@@ -11,7 +11,7 @@ function createTable(tableData) {
     tableBody.appendChild(row);
   });
   table.appendChild(tableBody);
-  document.body.appendChild(table);
+  document.getElementById("logtable").appendChild(table);
 }
 
 createTable([["row 1, cell 1", "row 1, cell 2"], ["row 2, cell 1", "row 2, cell 2"]]);
