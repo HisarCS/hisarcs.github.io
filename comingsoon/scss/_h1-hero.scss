@@ -1,0 +1,139 @@
+
+.slider-height {
+    min-height: 830px;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    @media #{$md}{
+        min-height: 600px;
+    }
+    @media #{$xs}{
+        min-height: 550px;
+    }
+}
+
+.slider-height2{
+    min-height: 390px;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    @media #{$xs}{
+        min-height: 300px;
+    }
+}
+.btn1 {
+    padding: 25px 0px;
+    @media #{$md}{
+        padding: 25px 0;
+    }
+}
+
+.slider-area{
+    margin-top: -1px;
+    .hero__caption{
+       
+        padding:39px 70px 56px 68px;
+        margin-left: -25px;
+        margin-right: 25px;
+        position: relative;
+        overflow: hidden;
+        @media #{$xs}{
+            padding: 39px 24px 55px 44px
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            background-image: url(../img/hero/hero_arrow.png);
+            left: 0;
+            right: 0;
+            bottom: -26px;
+            height: 57px;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            // Animated Arrow
+            animation: slide1 1s ease-in-out infinite;
+            margin-left: 0px;
+            @keyframes slide1 {
+                0%,
+                100% {
+                  transform: translate(0, 0);
+                }
+                50% {
+                  transform: translate(5px, 0);
+                  -webkit-transform: translate(5px, 0);
+                  -moz-transform: translate(5px, 0);
+                  -ms-transform: translate(5px, 0);
+                  -o-transform: translate(5px, 0);
+                }
+              }
+        }
+        & h1{
+            font-size: 70px;
+            font-weight: 900;
+            margin-bottom: 14px;
+            color: #ffffff;
+            font-family: 'Barlow', sans-serif;
+            line-height: 1.2;
+            text-transform: uppercase;
+            @media #{$lg}{
+                font-size: 60px;
+                line-height: 1.2;
+            }
+            @media #{$md}{
+                font-size: 50px;
+                line-height: 1.2;
+            }
+            @media #{$xs}{
+                font-size: 35px;
+                line-height: 1.2;
+            }
+        }
+        & p{
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 39px;
+            color: #ffffff;
+            margin-bottom: 25px;
+            padding-right: 49px;
+            @media #{$md}{
+                padding-right: 0px;
+            }
+            @media #{$xs}{
+                padding-right: 0px;
+            }
+           
+        }
+    }
+
+}
+
+//
+
+.hero-overly {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(1, 10, 28,  0.3);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+// Another Hero Page
+.slider-area{
+    .hero-cap{
+        & h2{
+            color: #fff;
+            font-size: 50px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    }
+}
