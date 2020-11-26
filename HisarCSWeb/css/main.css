@@ -1,0 +1,149 @@
+/*LOADER SCREEN ON*/
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: rgba(255, 145, 55, 1);
+    z-index: 1000;
+    transition: width 2s;
+    -webkit-transition: width 2s ease;
+}
+ 
+#loader-wrapper .loader-section.section-left {
+    left: 0px;
+}
+ 
+#loader-wrapper .loader-section.section-right {
+    right: 0px;
+}
+#loader {
+    position: fixed;
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+}
+#loader img {
+    display: block;
+    margin-left: 100%;
+    margin-top: 50%;
+    margin-bottom: 100%;
+    margin-right: 100%;
+    opacity: 1;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s ease;
+}
+
+
+/* LOADER SCREEN OFF, LOADED ID IS ADDED TO BODY */
+.loaded #loader-wrapper .loader-section.section-left {
+    width: 0px;
+
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    width: 0px;
+
+}
+
+.loaded #loader img{
+    opacity: 0;
+}
+
+
+
+
+/*NAVIGATION BAR*/
+
+#navbar {
+    background-color: rgba(0,0,0,0);
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 70px
+}
+#navbar img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#navbar-logo{
+    width: 15%;
+    height: auto;
+    display: inline-block;
+}
+
+#open-menu-button {
+    display: inline-block;
+    float: right;
+    width: 4%;
+    height: auto;
+    cursor: pointer;
+
+}
+
+/*MENU*/
+.menu {
+    right: 0;
+    transition: width 3s;
+    -webkit-transition: width 3s ease;
+    background: rgba(95, 95, 95, 1);
+    position: fixed;
+    top: 0px;
+    width: 0%;
+    height: 100%;
+}
+
+.menu-button-pressed .menu {
+    width: 100%;
+
+}
+
+.menu ul {
+    list-style: none;
+    margin: 10% auto 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 30%);
+    grid-template-rows: repeat(4, 25%);
+    grid-row-gap: 10em;
+    width: 80%;
+}
+
+.menu ul li {
+    display: block;
+    opacity: 0;
+    transition: opacity 2s 2s;
+    -webkit-transition: opacity 2s 2s;
+}
+
+.menu ul li a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.menu-button-pressed .menu ul li {
+    opacity: 1;
+    transition: opacity 2s 2s;
+    -webkit-transition: opacity 2s 2s;
+}
+
+#close-menu-button {
+    cursor: pointer;
+    float: right;
+    width: 4%;
+    height: auto;
+    margin-right: 2em;
+    margin-top: 2em;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+}
+
+.menu-button-pressed #close-menu-button {
+    opacity: 1;
+    transition: opacity 2s 2s;
+    -webkit-transition: opacity 2s 2s;
+}
+
+/* 
+rgba(255, 145, 55, 1)
+rgba(95, 95, 95, 1)
+rgba(46, 151, 211, 1)
+*/
