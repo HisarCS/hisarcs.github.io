@@ -454,7 +454,7 @@ Lacivert: #0a1447;
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   color: #fff;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -971,7 +971,7 @@ Mini kutular lacivert mi olsun consistency için pembe mi yardım iste.
   content: '';
   position: absolute;
   z-index: -1;
-  background: #e30071;
+  background: #0a1447;
   width: 100%;
   height: 100%; 
   opacity: .15;
@@ -1558,7 +1558,7 @@ preloader
 */
 #preloader {
   overflow: hidden;
-  background-image: linear-gradient(135deg, #a759d1 0%, #8261ee 100%);
+  background-image: linear-gradient(135deg, #0a1447 0%, #e30071 100%);
   left: 0;
   right: 0;
   top: 0;
