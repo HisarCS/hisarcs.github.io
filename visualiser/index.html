@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Visualiser</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: rgb(255, 221, 71);
+  padding: 200px;
+  text-align: center;
+  background-image: url("flyer.png");
+  background-repeat: no-repeat;
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255,87,86);
+  font-family: "Verdana";
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+    transition: 0s;
+  }
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #f2f2f2;
+  color: black;
+  transform: rotate(360deg);
+}
+
+.grayscale {-webkit-filter: grayscale(100%);filter: grayscale(100%);}
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  font-family: "Verdana";
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.column.side {
+  width: 25%;
+  font-family: "Verdana";
+  font-size: 14px;
+  text-align: center;
+}
+
+.column.middle {
+  width: 50%;
+  background-color:#f2f2f2;
+  text-align: center;
+  font-family: "Verdana";
+  font-size: 14px;
+  padding-bottom: 80px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+ }
+
+.column2 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  background-color: rgb(255, 221, 71);
+  font-family: "Verdana";
+  text-align: center;
+  font-size: 12px;
+
+}
+
+
+
+/*.projectdescript{
+  background-image: url("visualizerbackground.png");
+  padding: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  font-family: "Verdana";
+  font-size: 12px;
+  
+}
+*/
+
+.projectdescription{
+  padding-right: 100px;
+  padding-left: 100px;
+  font-family: "Verdana";
+  font-size: 14px;
+}
+
+/* makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+
+/*team history*/
+.column.sideth {
+  width: 10%;
+}
+
+/* Middle column */
+.column.middleth {
+  width: 80%;
+  text-align: center;
+  font-size: 14px;
+
+}
+
+/* Left and right column */
+.column.sidepd {
+  width: 33%;
+}
+
+/* Middle column */
+.column.middlepd {
+  width: 34%;
+  background-color:#f2f2f2;
+  text-align: center;
+}
+
+
+.footer {
+  background-color: rgb(255, 221, 71);
+  padding: 20px;
+  text-align: center;
+  font-family: Arial;
+  font-style: italic;
+}
+
+.roundbutton{
+  background-color: rgba(255, 221, 71,0.5);
+  border-radius: 50%;
+  width: 300px;
+  height: 150px;
+  transition: 1s;
+  font-size: 30px;
+  font-family: "Georgia";
+
+}
+
+.roundbutton:hover {
+  background-color: rgba(255, 221, 71,0.9);
+  border-radius: 50%;
+  width: 300px;
+  height: 150px;
+  transform: rotate(360deg);
+}
+  
+.grid-container2 {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 1px;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: rgb(0,0,0);
+  padding: 10px;
+}
+
+.grid-item2 {
+  background-color: rgb(0,0,0);
+ 
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.roundbutton2{
+  background-color: rgba(255, 221, 71,0.9);
+  border-radius: 30%;
+  width: 100px;
+  height: 20px;
+  transition: 1s;
+  font-size: 30px;
+  font-family: "Georgia";
+
+}
+
+.roundbutton2:hover {
+  background-color: rgba(255, 221, 71,1);
+  border-radius: 30%;
+  width: 100px;
+  height: 20px;
+  transform: rotate(360deg);
+
+}
+
+
+</style>
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1></h1>
+  
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#TeamHistory">Team History</a>
+  <a href="#ProjectDetails">Project Details</a>
+  <a href="TechnicalDetails.html">Technical Details</a>
+  <a href="MusicalDetails.html">Musical Details</a>
+  <a href="ArtisticDetails.html">Artistic Details</a>
+  <a href="#virtualtrial">Virtual Trial</a>
+  <a href="#ContactInfo">Contact</a>
+
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Team</h2>
+
+    <p>Our team consists of three 11th grade students, a computer science teacher and two graduates.</p>
+
+    <div align="center">
+             <img src="teamphoto.png" width="300" height="200"/>
+    </div>
+  </div>
+  
+  <div class="column middle">
+    <h2>Project Description</h2>
+    
+    <p>Visualizer is a project that aims to combine art, music and technology by controlling servo rotations in two main methods. In the first method, the Intel RealSense camera on the Visualizer will sense your presence, as it scans the solid object placed in front of it with Open CV. Then, the servos on the Visualizer will rotate and imitate you, or another object you put in front of the camera.  In the second method, servo motors will rotate according to the beats of a music, inspired by the baroque period, which has been composed by the computer. The computer uses various rules of music theory such as rhythm, chord progressions and root notes to compose a meaningful piece. The user can alter this piece by choosing a tone, mood and rhythm.
+</p>
+  </div>
+  
+  
+  <div class="column side">
+    <h2>Our Mission</h2>
+    <p>Visualiser aims to combine art, music and technology by rotating servo motors to create shapes of solid objects it senses.</p>
+  </div>
+</div>
+
+<hr>
+<hr>
+<hr>
+ <div class="column2">
+    <h2>Technical</h2>
+    <p>Can Aydın</p>
+     
+  
+  </div>
+  
+  <div class="column2">
+    <h2>Artist</h2>
+    <p>Deniz Erduran</p>
+  </div>
+  
+  <div class="column2">
+    <h2>Musician</h2>
+    <p>Yağmur Aytemiz</p>
+  </div>
+  
+
+
+<hr>
+<hr>
+<hr>
+<hr>
+
+<div id = "TeamHistory">
+<div class = "TeamHistoryBack">
+<div class="row">
+  <div class="column sideth">
+ 
+
+    <p></p>
+  </div>
+  
+  <div class="column middleth">
+    <h2 style="color: rgb(255, 221, 71)">Team History</h2>
+    <p> We, Deniz, Yağmur, and Can created Visualiser in order to combine art, music and technology. In the 21st century various branches are merging to form even more powerful creations. We think that art, music and technology create an appealing presentation together, rather than individually, as the combination of those three helps display a piece on multiple dimensions of strength a creation holds.  As some of us are interested in arts and the others in music, we decided to combine our interests over a field we all held enthusiasm for: technology.
+</p>
+
+ <img src="teamphoto.png" alt="Team Photo" width="300" height="200">
+   <img src="processfotolar.png" alt="Team Photo" width="1000" height="200">
+  </div>
+  
+  <div class="column sideth">
+
+    <p></p>
+  </div>
+
+</div>
+
+</div>
+
+
+
+
+ <!-- AYRI AYRI FOTOLAR KOD
+ <head><head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="responsive">
+
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="v1.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">.)</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="v1.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">.)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="v3.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">.)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="v3.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">.)</div>
+  </div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+</body>
+
+-->
+<!--
+<div id = "ProjectDetails">
+  <div class="projectdescript">
+  <h2 style= "color: white">Project Description</h2>
+  <p style = "color: white">Visualizer is a project that aims to combine art, music and technology by controlling servo rotations in two main methods. In the first method, the Intel RealSense camera on the Visualizer will sense your presence, as it scans the solid object placed in front of it with Open CV. Then, the servos on the Visualizer will rotate and imitate you, or another object you put in front of the camera.  In the second method, servo motors will rotate according to the beats of a music, inspired by the baroque period, which has been composed by the computer. The computer uses various rules of music theory such as rhythm, chord progressions and root notes to compose a meaningful piece. The user can alter this piece by choosing a tone, mood and rhythm. </p>
+
+<div style = "float: left">
+
+  <ul style = "float:left">
+  <button class="roundbutton" href = "#TeamHistory">Technical Details</button></li>
+  <button class="roundbutton">Artistic Details</button>
+  <button class="roundbutton">Musical Details</button>
+  
+</div>
+<br>
+<br>
+  </div>
+</div>
+</div> 
+-->
+
+<div id = "virtualtrial">
+
+
+<div style="background-color: black">
+<div class="grid-container2">
+    <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>  
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+    <div class="grid-item2"><button class="roundbutton2"></button></div>  
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>  
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+    <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>  
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>  
+</div>
+
+<div id = "ProjectDetails"
+<div class = "projectdescription">
+  <div style="text-align: center">
+    <h2 style= "color: white">Project Details</h2>
+    <p style = "color: white">Visualizer is a project that aims to combine art, music and technology by controlling servo rotations in two main methods. In the first method, the Intel RealSense camera on the Visualizer will sense your presence, as it scans the solid object placed in front of it with Open CV. Then, the servos on the Visualizer will rotate and imitate you, or another object you put in front of the camera.  In order to do this, the camera calculates the depth of the object placed in front of it. The depth captured by the camera is separated to its pixels and each servo motor is adjusted and moved according to the pixels the camera captures. To summarize, in the first method Visualizer will visualize anything the camera can see. In the second method, servo motors will rotate according to the beats of a music, inspired by the baroque period, which has been composed by the computer. The computer uses various rules of music theory such as rhythm, chord progressions and root notes to compose a meaningful piece. The user can alter this piece by choosing a tone, mood and rhythm. There will be eight tone options (C, D, E, F, G, A, B), two mood options (major, minor), and two rhythm options (thirds, fourths). Visualiser will create certain images according to the instruments, rhythm and notes in the composition. For example, certain servos will move every time the kick in the drum is played. That way we will be able to visualize the characteristics, beats, harmony and structure, of a music piece. </p>
+  </div>
+</div>
+
+
+   <div class="grid-container2">
+    <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>  
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+    <div class="grid-item2"><button class="roundbutton2"></button></div>  
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>  
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+    <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>  
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>
+  <div class="grid-item2"><button class="roundbutton2"></button></div>  
+</div>
+</div>
+</div>
+</div>
+
+<style>
+  .grid-container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 18px;
+  text-align: left;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+</style>
+
+<div id ="ContactInfo" style="text-align: center">
+  <h1>Contact Us</h1>
+  <div class="grid-container">
+  <div class="grid-item"> <b>email:</b> doralize03@gmail.com <br><b>adress:</b> Hisar Okulları Göktürk Merkez, İstanbul Cd. No:3, 34077 Eyüp/İstanbul</hr></div>
+  <div class="grid-item"> <div>
+  <form action="/action_page.php">
+    <label for="fname">Name Surname</label>
+    <input type="text" id="fname" name="firstname" placeholder="Name Surname">
+
+    <label for="lname">Notes</label>
+    <input type="text" id="lname" name="lastname" placeholder="Anything you would like to say...">
+
+    <label for="country">Age</label>
+    <select id="country" name="country">
+      <option value="australia">18-</option>
+      <option value="canada">18-40</option>
+      <option value="usa">40+</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div></div>
+  
+</div>
+
+</div>
+
+</div>
+</html>
