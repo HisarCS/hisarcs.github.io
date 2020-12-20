@@ -11,10 +11,10 @@
 
 <body class="is-preload" style="background-color:white;">
     <div id="wrapper">
-        <header id="header">
+        <header id="header" class="alt">
             <a href="index.html" class="logo"><strong>Hisar</strong>CS</a>
             <nav>
-                <a href="">TR/EN</a>
+                <button id="switch-lang" style="outline:none">TR</button>
                 <a href="#menu"></a>
             </nav>
         </header>
@@ -22,15 +22,23 @@
         <!-- Menu -->
         <nav id="menu">
             <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="coco.html">Comp.&Conf.</a></li>
-                <li><a href="documents.html">Documents</a></li>
+                <li lang="en"><a href="index.html">Home</a></li>
+                <li lang="tr"><a href="index.html">Anasayfa</a></li>
+                <li lang="en"><a href="about.html">About Us</a></li>
+                <li lang="tr"><a href="about.html">Hakkımızda</a></li>
+                <li lang="en"><a href="news.html">News</a></li>
+                <li lang="tr"><a href="news.html">Haberler</a></li>
+                <li lang="en"><a href="events.html">Events</a></li>
+                <li lang="tr"><a href="events.html">Etkinlikler</a></li>
+                <li lang="en"><a href="projects.html">Projects</a></li>
+                <li lang="tr"><a href="projects.html">Projeler</a></li>
+                <li lang="en"><a href="coco.html">Comp.&Conf.</a></li>
+                <li lang="tr"><a href="coco.html">Yarış.&Konf.</a></li>
+                <li lang="en"><a href="documents.html">Documents</a></li>
+                <li lang="tr"><a href="documents.html">Dokümanlar</a></li>
                 <li><a href="idealab.html">ideaLab</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li lang="en"><a href="contact.html">Contact</a></li>
+                <li lang="tr"><a href="contact.html">İletişim</a></li>
             </ul>
             <ul class="actions stacked">
                 <li><a href="https://github.com/HisarCS" class="button primary fit">GitHub</a></li>
@@ -76,6 +84,16 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        let button = document.getElementById("switch-lang");
+        $('[lang="tr"]').hide(); document.documentElement.lang = "en-US";
+        $('#switch-lang').click(function() {
+            if (button.innerText == "EN") { button.innerText = "TR"; document.documentElement.lang = "en-US"; }
+            else { button.innerText = "EN"; document.documentElement.lang = "tr-TR"; };
+            $('[lang="tr"]').toggle(); $('[lang="en"]').toggle();
+        });
+    </script>
     
 </body>
 </html>

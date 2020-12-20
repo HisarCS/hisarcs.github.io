@@ -2514,13 +2514,11 @@ section, summary, time, mark, audio, video {
             background-color: transparent;
             border: 0;
             border-radius: 0;
-            box-shadow: inset 0 0 0 2px #ffffff;
             color: #ffffff;
             cursor: pointer;
             display: inline-block;
             font-size: 0.8em;
             font-weight: 600;
-            height: 3.5em;
             letter-spacing: 0.25em;
             line-height: 3.5em;
             padding: 0 1.75em;
@@ -2545,7 +2543,6 @@ section, summary, time, mark, audio, video {
         button:active,
         .button:hover,
         .button:active {
-            box-shadow: inset 0 0 0 2px #9bf1ff;
             color: #9bf1ff;
         }
         
