@@ -3,6 +3,7 @@
 <head>
     <title>Coco - HisarCS</title>
     <meta charset="utf-8"/>
+    <meta name="description" content="A computer science team from Hisar High School in Istanbul, Turkey with many students actively developing CS & robotics projects, events and organizing competitions & conferences all around the world."/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
@@ -155,16 +156,7 @@
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <script>
-        let button = document.getElementById("switch-lang");
-        $('[lang="tr"]').hide(); document.documentElement.lang = "en-US";
-        $('#switch-lang').click(function() {
-            if (button.innerText == "EN") { button.innerText = "TR"; document.documentElement.lang = "en-US"; }
-            else { button.innerText = "EN"; document.documentElement.lang = "tr-TR"; };
-            $('[lang="tr"]').toggle(); $('[lang="en"]').toggle();
-        });
-    </script>
+    <script src="assets/js/language.js"></script>
     
 </body>
 </html>

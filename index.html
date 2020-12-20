@@ -3,6 +3,7 @@
 <head>
     <title>HisarCS</title>
     <meta charset="utf-8"/>
+    <meta name="description" content="A computer science team from Hisar High School in Istanbul, Turkey with many students actively developing CS & robotics projects, events and organizing competitions & conferences all around the world."/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="google-site-verification" content="ELANX-Lf0LcD5I204yl36pvgIH15BsZZmZc3_WUG4dY"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
@@ -51,7 +52,7 @@
                 <header class="major">
                     <h1>HisarCS</h1>
                 </header>
-                <p lang="en">A computer science team from Hisar High School in Istanbul, Turkey with many students actively developing CS & robotics projects, attendings and organizing competitions & conferences all around the world.</p>
+                <p lang="en">A computer science team from Hisar High School in Istanbul, Turkey with many students actively developing CS & robotics projects, events and organizing competitions & conferences all around the world.</p>
                 <p lang="tr">Bilgisayar takımıyız.</p>
             </div>
         </section>
@@ -154,22 +155,7 @@
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/main.js"></script>
-    
-    <script>
-        let button = document.getElementById("switch-lang");
-
-        cookie = document.cookie.match(/^(.*;)?[]{0,1}lang=[^;]+(.*)?$/);
-        console.log(cookie);
-        if(cookie =="en") console.log("a")
-        else {
-            $('[lang="tr"]').hide(); document.documentElement.lang = "en-US";
-        }
-        $('#switch-lang').click(function() {
-            if (button.innerText == "EN") { button.innerText = "TR"; document.documentElement.lang = "en-US"; document.cookie = "lang=en"; }
-            else { button.innerText = "EN"; document.documentElement.lang = "tr-TR"; document.cookie = "lang=tr"; };
-            $('[lang="tr"]').toggle(); $('[lang="en"]').toggle();
-        });
-    </script>
+    <script src="assets/js/language.js"></script>
     
 </body>
 </html>
