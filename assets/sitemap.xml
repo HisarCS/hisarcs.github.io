@@ -6,102 +6,59 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://hisarcs.github.io/</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://hisarcs.github.io/index.html</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hisarcs.github.io/about.html</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hisarcs.github.io/news.html</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hisarcs.github.io/events.html</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hisarcs.github.io/projects.html</loc>
-  <lastmod>2020-12-20T15:36:50+00:00</lastmod>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hisarcs.github.io/coco.html</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hisarcs.github.io/documents.html</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hisarcs.github.io/idealab.html</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hisarcs.github.io/contact.html</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://hisarcs.github.io/SonicPi/</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.81</priority>
-</url>
-<url>
-  <loc>https://hisarcs.github.io/pomelo/</loc>
-  <lastmod>2020-12-20T15:36:50+00:00</lastmod>
-  <priority>0.81</priority>
 </url>
 <url>
   <loc>https://hisarcs.github.io/piwarsuk.html</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://hisarcs.github.io/Gamejam/</loc>
 </url>
 <url>
-  <loc>https://hisarcs.github.io/teknofest/</loc>
-  <lastmod>2020-12-20T15:36:50+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://hisarcs.github.io/SonicPi/</loc>
 </url>
 <url>
   <loc>https://hisarcs.github.io/SonicPi/tr.html</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://hisarcs.github.io/SonicPi/speaker-details.html</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://hisarcs.github.io/pirobot/</loc>
 </url>
 <url>
-  <loc>https://hisarcs.github.io/pomelo/index.html</loc>
-  <lastmod>2020-12-20T15:36:50+00:00</lastmod>
-  <priority>0.81</priority>
+  <loc>https://hisarcs.github.io/pomelo/</loc>
 </url>
 <url>
-  <loc>https://hisarcs.github.io/teknofest/index.html</loc>
-  <lastmod>2020-12-20T15:36:50+00:00</lastmod>
-  <priority>0.81</priority>
+  <loc>https://hisarcs.github.io/teknofest/</loc>
 </url>
 <url>
-  <loc>https://hisarcs.github.io/SonicPi/index.html</loc>
-  <lastmod>2020-12-20T15:36:49+00:00</lastmod>
-  <priority>0.81</priority>
+  <loc>https://hisarcs.github.io/visualiser/</loc>
 </url>
-
-
 </urlset>
